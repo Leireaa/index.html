@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Mikhylerayne’s Street Foodies</title>
+  <link rel="icon" type="image/jpeg" href="logo.jpeg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="logo.jpeg" class="logo" alt="Mikhylerayne’s Street Foodies Logo">
+      <h1 class="brand-name">Mikhylerayne’s Street Foodies</h1>
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="whyus.html">Why Us?</a>
+      <a href="products.html">Products</a>
+      <a href="contacts.html">Contacts</a>
+    </nav>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </header>
+
+  <section class="about-section">
+    <div class="about-container">
+      <h2>Who We Are</h2>
+      <p>Welcome to <b>Mikhylerayne’s Street Foodies</b> — your local home for sweet and savory delights. What started as a small passion for homemade desserts and snacks grew into a business that celebrates flavor, creativity, and Filipino comfort food.</p>
+
+      <h3>Our Story</h3>
+      <p>Our journey began with a simple goal: to share happiness through every bite. We take pride in offering food that’s not just delicious but made with care and genuine love for our customers. From street favorites to comforting desserts, we bring a taste of joy to every table.</p>
+
+      <h3>Mission</h3>
+      <p>To provide quality, affordable, and heartfelt food that makes every customer feel at home — wherever they are.</p>
+
+      <h3>Values</h3>
+      <ul>
+        <li>Quality and Freshness in Every Bite</li>
+        <li>Honest and Friendly Service</li>
+        <li>Love for Local Flavor</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Mikhylerayne’s Street Foodies. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navLinks.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>

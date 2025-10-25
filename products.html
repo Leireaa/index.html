@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | Mikhylerayne’s Street Foodies</title>
+  <link rel="icon" type="image/jpeg" href="logo.jpeg">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="logo.jpeg" alt="Mikhylerayne’s Street Foodies Logo" class="logo" />
+      <h1 class="brand-name">Mikhylerayne’s Street Foodies</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="whyus.html">Why Us?</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="contacts.html">Contacts</a>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </header>
+
+  <section class="products-section">
+    <h2>Our Sweet Selections</h2>
+    <div class="product-carousel">
+      <button class="carousel-btn prev">&#10094;</button>
+      <div class="product-container">
+        <div class="product-card">
+          <img src="mangograhamfloat.jpeg" alt="Mango Graham Float" />
+          <h3>Mango Graham Float</h3>
+          <p class="price">₱120</p>
+          <a href="contacts.html" class="btn">Order Now</a>
+        </div>
+        <div class="product-card">
+          <img src="oreocookiefloat.jpeg" alt="Oreo Cookie Float" />
+          <h3>Oreo Cookie Float</h3>
+          <p class="price">₱120</p>
+          <a href="contacts.html" class="btn">Order Now</a>
+        </div>
+        <div class="product-card">
+          <img src="rockyroad.jpeg" alt="Rocky Road" />
+          <h3>Rocky Road</h3>
+          <p class="price">₱120</p>
+          <a href="contacts.html" class="btn">Order Now</a>
+        </div>
+        <div class="product-card">
+          <img src="blackforestfloat.jpeg" alt="Black Forest" />
+          <h3>Black Forest</h3>
+          <p class="price">₱120</p>
+          <a href="contacts.html" class="btn">Order Now</a>
+        </div>
+        <div class="product-card">
+          <img src="letcheflan.jpeg" alt="Leche Flan" />
+          <h3>Leche Flan</h3>
+          <p class="price">₱60</p>
+          <a href="contacts.html" class="btn">Order Now</a>
+        </div>
+        <div class="product-card">
+          <img src="yemacake.jpeg" alt="Yema Cake" />
+          <h3>Yema Cake</h3>
+          <p class="price">₱70</p>
+          <a href="contacts.html" class="btn">Order Now</a>
+        </div>
+        <div class="product-card">
+          <img src="MiloIcecream.jpeg" alt="Milo Icecream Float" />
+          <h3>Milo Icecream Float</h3>
+          <p class="price">₱70</p>
+          <a href="contacts.html" class="btn">Order Now</a>
+        </div>
+        <div class="product-card">
+          <img src="strawberrymallowfloat.jpeg" alt="Strawberry Mallow Float" />
+          <h3>Strawberry Mallow Float</h3>
+          <p class="price">₱120</p>
+          <a href="contacts.html" class="btn">Order Now</a>
+        </div>
+        <div class="product-card">
+          <img src="coffeecrumble.jpeg" alt="Coffee Crumble" />
+          <h3>Coffee Crumble</h3>
+          <p class="price">₱120</p>
+          <a href="contacts.html" class="btn">Order Now</a>
+        </div>
+        <div class="product-card">
+          <img src="doubledutchfloat.jpeg" alt="Double Dutch Float" />
+          <h3>Double Dutch Float</h3>
+          <p class="price">₱120</p>
+          <a href="contacts.html" class="btn">Order Now</a>
+        </div>
+        <div class="product-card">
+          <img src="chococake.jpeg" alt="Choco Cake" />
+          <h3>Choco Cake</h3>
+          <p class="price">₱70</p>
+          <a href="contacts.html" class="btn">Order Now</a>
+        </div>
+      </div>
+      <button class="carousel-btn next">&#10095;</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Mikhylerayne’s Street Foodies. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const container = document.querySelector('.product-container');
+    const nextBtn = document.querySelector('.next');
+    const prevBtn = document.querySelector('.prev');
+    nextBtn.addEventListener('click', () => {
+      container.scrollBy({ left: 300, behavior: 'smooth' });
+    });
+    prevBtn.addEventListener('click', () => {
+      container.scrollBy({ left: -300, behavior: 'smooth' });
+    });
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navLinks.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Us? | Mikhylerayne’s Street Foodies</title>
+  <link rel="icon" type="image/jpeg" href="logo.jpeg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="logo.jpeg" class="logo" alt="Mikhylerayne’s Street Foodies Logo">
+      <h1 class="brand-name">Mikhylerayne’s Street Foodies</h1>
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="whyus.html" class="active">Why Us?</a>
+      <a href="products.html">Products</a>
+      <a href="contacts.html">Contacts</a>
+    </nav>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </header>
+
+  <section class="whyus-section">
+    <div class="whyus-container">
+      <h2>Why Choose Mikhylerayne’s Street Foodies?</h2>
+      <p>Our product is unique because it was created with a clear mission to make quality, reliability, and care accessible to everyone. Born from a simple idea and built through genuine passion, we focus on real value, not just features. Every detail reflects our commitment to improving lives and delivering something people can truly trust.</p>
+
+      <h3>What Sets Us Apart</h3>
+      <p>Customers should choose our products because we prioritize quality, honesty, and customer satisfaction above all else. We deliver real value, not just promises — products that are built to last and made with genuine care. By selecting desserts from trusted makers, we ensure every tub brings happiness and trust to our customers.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Mikhylerayne’s Street Foodies. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navLinks.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>

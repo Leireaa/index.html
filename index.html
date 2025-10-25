@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mikhylerayne’s Street Foodies</title>
+  <link rel="icon" type="image/jpeg" href="logo.jpeg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="logo.jpeg" class="logo" alt="Mikhylerayne’s Street Foodies Logo">
+      <h1 class="brand-name">Mikhylerayne’s Street Foodies</h1>
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="whyus.html">Why Us?</a>
+      <a href="products.html">Products</a>
+      <a href="contacts.html">Contacts</a>
+    </nav>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Mikhylerayne’s Street Foodies</h2>
+    <p>Bringing your favorite desserts and sweet cravings closer to home. Made with love, served with happiness — every bite is a treat to remember.</p>
+    <a href="products.html" class="btn">Explore Our Desserts</a>
+  </section>
+
+  <section class="about-section">
+    <div class="about-container">
+      <h2>Our Promise</h2>
+      <p>At <b>Mikhylerayne’s Street Foodies</b>, we believe that every dessert should be made with passion, care, and honesty. That’s why we bring you products that taste as good as they look — sweet, fresh, and made just for you.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Mikhylerayne’s Street Foodies. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navLinks.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
